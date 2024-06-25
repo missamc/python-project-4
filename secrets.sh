@@ -1,0 +1,1 @@
+export POSTGRES_URI="postgresql:///project-tracking-app"
