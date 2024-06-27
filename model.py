@@ -24,7 +24,7 @@ class Team(db.Model):
     id = db.Column(db.Integer, primary_key = True, autoincrement = True)
     team_name = db.Column(db.String(255), unique = True, nullable = False)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable = False)
-    team = my_user.teams[0]
+  
 
     def __init__(self, team_name, user_id):
         self.team_name = team_name
